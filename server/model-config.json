@@ -12,5 +12,41 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "users": {
+    "dataSource": "db",
+    "public": true
+  },
+  "groups": {
+    "dataSource": "db",
+    "public": true
+  },
+  "contacts": {
+    "dataSource": "db",
+    "public": true
+  },
+  "groupContacts": {
+    "dataSource": "db",
+    "public": false
+  },
+  "templates": {
+    "dataSource": "db",
+    "public": true
+  },
+  "sms": {
+    "dataSource": "db",
+    "public": false
+  },
+  "smsReceipts": {
+    "dataSource": "db",
+    "public": false
+  },
+  "emails": {
+    "dataSource": "db",
+    "public": true
+  },
+  "emailReceipts": {
+    "dataSource": "db",
+    "public": false
   }
 }
