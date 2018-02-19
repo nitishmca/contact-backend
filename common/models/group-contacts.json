@@ -1,0 +1,23 @@
+{
+  "name": "groupContacts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+  },
+  "validations": [],
+  "relations": {
+    "Groups": {
+      "type": "belongsTo",
+      "model": "groups"
+    },
+    "Contacts": {
+      "type": "belongsTo",
+      "model": "contacts"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

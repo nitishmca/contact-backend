@@ -1,0 +1,24 @@
+{
+  "name": "smsReceipts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "Receiver": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "recieverId",
+      "primaryKey" : "id"      
+    },
+    "sms": {
+      "type": "belongsTo",
+      "model": "sms"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,39 @@
+{
+  "name": "users",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "profile_pic": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "modified": {
+      "type": "date"
+    },
+    "created": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Contacts": {
+      "type": "hasMany",
+      "model": "contacts"
+    },
+    "Groups": {
+      "type": "hasMany",
+      "model": "groups"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

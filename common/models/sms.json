@@ -1,0 +1,28 @@
+{
+  "name": "sms",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "sms": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Senders": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "senderId",
+      "primaryKey" : "id"      
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

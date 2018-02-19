@@ -1,0 +1,24 @@
+{
+  "name": "emailReceipts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "Receiver": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "recieverId",
+      "primaryKey" : "id"      
+    },
+    "email": {
+      "type": "belongsTo",
+      "model": "emails"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

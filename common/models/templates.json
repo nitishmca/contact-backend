@@ -1,0 +1,40 @@
+{
+  "name": "templates",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "template": {
+      "type": "string",
+      "required": true
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "modified": {
+      "type": "date"
+    },
+    "created": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "belongsTo",
+      "model": "users"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
